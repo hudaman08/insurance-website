@@ -1,0 +1,247 @@
+body {
+  font-family: "arial", sans-serif;
+}
+
+div.header-wrapper{
+  margin: 20px auto;
+  width: 1024px;
+  /*width: calc(100% - 100px);*/
+  height: 140px;
+  border: 2px solid black;
+}
+
+div.header-top{
+  height: 50px;
+  margin:10px 0px;
+  border: 2px solid black;
+}
+
+div.header-bottom{
+  height: 50px;
+  margin:10px 0px;
+  border: 2px solid black;
+}
+
+img#search{
+  float:right;
+  height: 30px;
+  /* FIXME: center vertically */
+}
+
+#support-button{
+  background-color: blue;
+  color: white;
+  padding: 15px;
+}
+
+div.tile-left{
+  float: left;
+  margin: 20px 2.5% 20px 5%;
+  /*margin: 0 auto;*/
+  border: 2px solid black;
+  /*border-width: 2px;
+  border-color: black;
+  border-style: solid;*/
+  padding: 20px;
+  /*background-color: lightblue;*/
+  width: 26.666%;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+div.tile-middle{
+  float: left;
+  margin: 20px 2.5% 20px 2.5%;
+  /*margin: 0 auto;*/
+  border: 2px solid black;
+  padding: 20px;
+  /*background-color: pink;*/
+  width: 26.666%;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+div.tile-right{
+  float: right;
+  /*could be float right since together they end up adding to 100%*/
+  margin: 20px 5% 20px 2.5%;
+  /*margin: 0 auto;*/
+  border: 2px solid black;
+  padding: 20px;
+  /*background-color: gray;*/
+  width: 26.666%;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+div.tiles {
+  margin: 20px auto;
+  /*padding: 0px 0px*/
+  width: 1024px;
+  height: 290px;
+  /*background-color: purple;*/
+}
+
+div.footer {
+  float: left;
+  padding: 20px;
+  width: 20.625%;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+div#footer1{
+  margin: 20px 1.25% 20px 5%;
+  /*margin: 0 auto;
+  border: 2px solid black;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+  background-color: lightblue;
+  width: 20.625%;
+  height: 400px;
+  box-sizing: border-box;*/
+}
+
+div#footer2{
+  margin: 20px 1.25% 20px 1.25%;
+  /*float: left;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: pink;
+  width: 20.625%;
+  height: 400px;
+  box-sizing: border-box;*/
+}
+
+div#footer3{
+  margin: 20px 1.25% 20px 1.25%;
+  /*float: left;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: pink;
+  width: 20.625%;
+  height: 400px;
+  box-sizing: border-box;*/
+}
+
+div#footer4{
+  margin: 20px 5% 20px 1.25%;
+  /*float: right;
+  could be float right since together they end up adding to 100%
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: gray;
+  width: 20.625%;
+  height: 400px;
+  box-sizing: border-box;*/
+}
+
+div.footer-wrapper {
+    /*clear:both;*/
+    /*Clear not needed since the wrapper wasn't floated*/
+    margin: 20px auto;
+    width: 1024px;
+    height: 560px;
+    background-color: #F0F0F5;
+}
+
+div.disclaimer{
+  clear:both;
+  height: 100px;
+  margin:10px 0px;
+  border: 2px solid black;
+}
+
+.questions{
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tilename{
+  text-align: center;
+  font-size: 20px;
+  /*vertical-align: text-bottom;*/
+  /* FIXME: ALIGN TO BOTTOM OF THE BOX */
+}
+
+img.tiles{
+  height: 80px;
+  /*the below centers the image*/
+  display: block;
+  margin: 0 auto;
+}
+
+p.footer-header{
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul.footer{
+  list-style: none;
+  text-align: left;
+  padding-left: 0px;
+  /*margin: 5px 0;*/
+}
+
+li{
+  margin: 10px 0;
+}
+/*
+NOT REALLY NEEDED/ Seems like an easier way
+ul.footer > li{
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+}*/
+
+#claims{
+  border-color: #E0B816;
+  color: #E0B816;
+}
+
+#benefits{
+  border-color: #9324D4;
+  color: #9324D4;
+}
+
+#accounts{
+  border-color: #478015;
+  color: #478015;
+}
+
+#wellness{
+  border-color: #D11134;
+  color: #D11134;
+}
+
+#id{
+  border-color:#1560BD;
+  color: #1560BD;
+}
+
+#doc{
+  border-color: #C98E16;
+  color: #C98E16;
+}
+
+#feedback{
+  height:40px;
+  width:100px;
+  color: white;
+  background-color: red;
+  border: 1px solid white;
+  position:fixed;
+  bottom: 10px;
+  left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align:center;
+
+}
