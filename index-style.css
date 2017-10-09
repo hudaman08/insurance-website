@@ -2,36 +2,101 @@ body {
   font-family: "arial", sans-serif;
 }
 
+span.bold{
+  font-weight: bold;
+}
+
+div.clearfix{
+  clear: both;
+}
+
 div.header-wrapper{
   margin: 20px auto;
-  width: 1024px;
-  /*width: calc(100% - 100px);*/
-  height: 140px;
-  border: 2px solid black;
+  width: 960px;/* FIXME: use the breakpoint as well */
+  /*position:fixed;
+  bottom: 0px;
+  left: 0px;*/
+/* FIXME: how would you make this sticky? */
+  /*height: 140px;*/
+  /*border: 2px solid black;*/
 }
 
 div.header-top{
-  height: 50px;
-  margin:10px 0px;
-  border: 2px solid black;
+  /*height: 50px;*/
+  width: 100%;
+  /* FIXME: do you make a width of 100% 100% */
+  margin:0px 0px;
+  /*border: 2px solid black;*/
 }
 
-div.header-bottom{
+nav.header-bottom{
   height: 50px;
-  margin:10px 0px;
-  border: 2px solid black;
+  width: 100%;
+  margin:0px 0px;
+  /*border: 2px solid black;*/
+  text-transform: uppercase;
+}
+
+div.head-element-left{
+  float: left;
+  margin: 10px 7px;
+  height: 30px;
+  line-height: 5px;
+  font-size: 10pt;
+  letter-spacing: -.8px;
+  /* why does the line-height work */ /* FIXME: add this as a question */
+}
+
+
+div.head-element-right{
+  float: right;
+  margin: 10px 7px;
+  height: 30px;
+  line-height: 5px;
+  font-size: 10pt;
+  letter-spacing: -.8px;
 }
 
 img#search{
-  float:right;
+  float: right;
+  margin: 10px;
   height: 30px;
   /* FIXME: center vertically */
 }
 
-#support-button{
-  background-color: blue;
+div#logo{
+  float: left;
+  height: 40px;
+  width: 90px;
+  margin: 0px 10px;
+  /*background-size: 50px 200px;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(images/logo.jpg);
+}
+
+div#support-button{
+  background-color: darkblue;
   color: white;
-  padding: 15px;
+  height: 50px;
+  margin: 0px 10px;
+  /*padding: 5px;*/
+  width: 110px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 5px;
+  font-size: 12pt;
+}
+
+span#carret{
+  text-transform: lowercase;
+  font-size: 14pt;
+  display: inline-block;
+  transform: scaleY(0.5);
+  transform-origin: 0 0;
 }
 
 div.tile-left{
@@ -45,7 +110,7 @@ div.tile-left{
   padding: 20px;
   /*background-color: lightblue;*/
   width: 26.666%;
-  height: 250px;
+  height: 200px;
   box-sizing: border-box;
 }
 
@@ -57,7 +122,7 @@ div.tile-middle{
   padding: 20px;
   /*background-color: pink;*/
   width: 26.666%;
-  height: 250px;
+  height: 200px;
   box-sizing: border-box;
 }
 
@@ -70,23 +135,23 @@ div.tile-right{
   padding: 20px;
   /*background-color: gray;*/
   width: 26.666%;
-  height: 250px;
+  height: 200px;
   box-sizing: border-box;
 }
 
 div.tiles {
   margin: 20px auto;
   /*padding: 0px 0px*/
-  width: 1024px;
-  height: 290px;
+  width: 960px;
+  /*height: 290px;*/
   /*background-color: purple;*/
 }
 
 div.footer {
   float: left;
-  padding: 20px;
+  padding: 0px 20px;
   width: 20.625%;
-  height: 400px;
+  /*height: 400px;*/
   box-sizing: border-box;
 }
 
@@ -145,14 +210,15 @@ div.footer-wrapper {
     /*clear:both;*/
     /*Clear not needed since the wrapper wasn't floated*/
     margin: 20px auto;
-    width: 1024px;
-    height: 560px;
+    width: 960px;
+    /*height: 560px;*/
     background-color: #F0F0F5;
 }
 
 div.disclaimer{
   clear:both;
   height: 100px;
+  width: 100%;
   margin:10px 0px;
   border: 2px solid black;
 }
